@@ -8,6 +8,7 @@ import React, {
   Fragment,
 } from "react";
 
+import AvatarIcon from "../icons/aiavatar.svg";
 import SendWhiteIcon from "../icons/send-white.svg";
 import BrainIcon from "../icons/brain.svg";
 import RenameIcon from "../icons/rename.svg";
@@ -1174,7 +1175,12 @@ function _Chat() {
                         <Avatar avatar={config.avatar} />
                       ) : (
                         <div className={styles["chat-message-avatar-mazu"]}>
-                          <Avatar></Avatar>
+                          <IconButton
+                            icon={<AvatarIcon />}
+                            text={''}
+                            onClick={() => {}}
+                            shadow
+                          />
                         </div>
                       )}
                     </div>
