@@ -31,6 +31,11 @@ import { api } from "../client/api";
 import { useAccessStore } from "../store";
 
 export function Loading(props: { noLogo?: boolean }) {
+
+  useEffect(() => {
+    document.title = "数税捷AI";
+  });
+
   return (
     <div className={styles["loading-content"] + " no-dark"}>
       {!props.noLogo && <BotIcon />}
@@ -132,6 +137,7 @@ function Screen() {
 
   useEffect(() => {
     loadAsyncGoogleFont();
+    document.title = "数税捷AI";
   }, []);
 
   return (

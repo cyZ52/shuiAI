@@ -226,12 +226,8 @@ export function SideBar(props: { className?: string }) {
             icon={<AddIcon />}
             text={''}
             onClick={() => {
-              if (config.dontShowMaskSplashScreen) {
                 chatStore.newSession();
                 navigate(Path.Chat);
-              } else {
-                navigate(Path.NewChat);
-              }
             }}
             shadow
           />
